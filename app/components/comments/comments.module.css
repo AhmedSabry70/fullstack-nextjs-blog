@@ -1,0 +1,77 @@
+.container {
+    margin-top: var(--step-4);
+}
+
+.title {
+    text-transform: capitalize;
+    color: var(--dark-blue);
+    margin-bottom: var(--step-3);
+    font-family: var(--font-secondary);
+
+}
+
+.write {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.9rem;
+}
+
+.input {
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.button {
+    padding: 18px 20px;
+    background-color: teal;
+    color:white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.comments{
+    margin-top: 3.2rem;
+}
+.comment {
+    margin-bottom: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--step--3);
+}
+
+.user{
+display: flex;
+align-items: center;
+gap: var(--step-0);
+
+}
+
+.userImage {
+    border-radius: 50%;
+    object-fit: cover;
+    border:1px solid gray;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    color: gray;
+}
+
+.username{
+    font-weight: 500;
+}
+
+.date{
+    font-size: var(--step--2);
+}
+.desc{
+    font-size: var(--step-0);
+    font-weight: 300;
+}

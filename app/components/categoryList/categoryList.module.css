@@ -1,0 +1,30 @@
+
+
+
+.title {
+    margin-block: var(--step-5);
+}
+
+.categories {
+    --min-column: 15ch;
+    --gap: 1rem;
+    display: grid;
+    grid-gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min-column)), 1fr));
+}
+
+.category {
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+    justify-content: center;
+    height: var(--step-5);
+    padding-inline: var(--step--1);
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+
+.image {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}

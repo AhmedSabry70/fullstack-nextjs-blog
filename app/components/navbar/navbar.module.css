@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container > div {
+    flex:1;
+ }
+.social {
+    display: flex;
+    gap: .52rem;
+}
+
+.logo {
+    text-align:center;
+    /* font-size: 2.25rem; */
+    font-size: var(--step-2);
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* gap: 1.2rem; */
+    gap: var(--step-0);
+    /* font-size: 1.25rem; */
+    font-size: var(--step-0);    
+}
+
+
+@media screen and (width < 1024px) {
+    .social {
+        display: none;
+    }
+    .logo {
+        text-align: start;
+    }
+}
+
+@media screen and (width < 640px) {
+    .link {
+        display: none;
+    }
+}

@@ -1,0 +1,50 @@
+.link {
+    cursor: pointer;
+}
+
+.burger {
+
+    width: 20px;
+    height: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background: rgb(var(--foreground-rgb))
+
+}
+
+
+.mobileMenu {
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    background: var(--secondary-glow);
+    height: calc(100vh - var(--nav-height));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: var(--step-2);
+}
+
+
+@media screen and (width < 640px) {
+    .burger {
+        display: flex;
+    }
+    .link {
+        display: none;
+    }
+    .mobileMenu .link {
+        display: unset;
+    }
+}

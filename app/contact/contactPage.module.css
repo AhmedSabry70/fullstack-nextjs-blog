@@ -1,0 +1,56 @@
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+   gap: var(--step-2);
+
+}
+
+
+
+
+.map {
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mapContainer {
+    height: 100%;
+     width: 100%;
+      position: absolute;
+       top: 0px;
+        left: 0px;
+         background-color: rgb(229, 227, 223);
+}
+
+
+
+
+.contactWarpper {
+    padding-block:var(--step-1);
+}
+
+.contactTitle{
+    font-size: var(--step-2);
+    text-transform: capitalize;
+
+}
+
+.row {
+    display: flex;
+    gap: var(--step-2);
+   
+    align-items:flex-start;
+
+    background-color: #ccc;
+}
+
+.row > :first-child {
+flex: 3;
+}
+.row:last-child{
+    flex: 1;
+}

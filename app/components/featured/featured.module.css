@@ -1,0 +1,137 @@
+.container {
+    margin-block-start: var(--step-4);
+}
+
+.title {
+    font-size: var(--step-7);
+    font-weight: 300;
+    text-align: center;
+    
+    
+
+}
+.bold {
+    background-image: url('/assets/images/bg/texture.jpg') ;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    color: transparent;
+     background-clip: text;  
+     --webkit-background-clip: text; 
+}
+
+.overline {
+    font-size:var(--step-1);
+    color:rgb(101, 103, 104);
+}
+
+
+.post {
+    margin-block-start: var(--step-5);
+    
+    display: flex;
+    align-items: center;
+    gap: var(--step-4);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.13);
+    overflow: hidden;
+    
+    
+    box-shadow: 0 0 10px rgba(var(--card-border-rgb),.2),
+    0 0 50px rgba(var(--card-border-rgb),.2);
+}
+
+.imageContainer {
+    flex: 1;
+    position: relative;
+  
+    height: 500px;
+}
+
+
+.image{
+       object-fit: cover;
+}
+
+.postBody {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding-block: var(--step-0);
+    padding-inline: var(--step-0);
+}
+.postTitle {
+    font-size: var(--step-4);
+}
+
+.postMeta {
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--step-0);
+
+}
+.postTag{
+    text-transform: uppercase;
+    padding-inline-end: var(--step-0);
+}
+
+.rating,
+.stars {
+    display: flex;
+    gap: 2px;
+}
+.star {
+    fill:aquamarine;
+    width: 14px;
+    height: 14px;
+}
+
+.postDesc {
+    font-size: var(--step-0);
+    font-weight: 300;
+    color: rgb(var(--foreground-rgb));
+}
+
+.button {
+    width: max-content;
+   
+    padding-inline: var(--step-5);
+    padding-block: var(--step--3);
+    border: none;
+    border-radius: 95px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(var(--foreground-rgb));
+
+    background-color: #A1A6BB;
+    box-shadow:  0 2px 15px #b9bed13f,
+    0 15px 30px #b9bed18f;
+    cursor: pointer;
+
+
+}
+
+.button:hover {
+    box-shadow: inset 0 0 20px #00000036;
+}
+.button:active {
+    box-shadow:  0 2px 15px #b9bed13f,
+    0 15px 30px #b9bed18f,
+    inset 0 0 20px #000000b9;
+}
+
+
+
+@media screen and (width <= 1024px) {
+    .imageContainer {
+        display: none;
+    }
+
+    .button {
+       align-self: flex-end;
+    }
+    
+}

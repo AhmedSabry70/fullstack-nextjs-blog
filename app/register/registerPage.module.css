@@ -1,0 +1,136 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+   
+
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    gap: 3rem;
+
+ 
+
+    border: 1px solid var(--background-end-rgb);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(var(--foreground-rgb),.4),
+    0 0 50px 0px rgba(var(--foreground-rgb),.2);
+}
+.wrapper > * {
+    flex: 1;
+    padding:  20px;
+    
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%; 
+    height: 300px;
+}
+
+.image {
+    object-fit: cover;
+}
+
+
+.singupAction {
+    
+    text-decoration: underline;
+
+}
+
+
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+
+.title {
+    font-size: var(--step-3);
+}
+
+.registerForm {
+    display: flex;
+    flex-direction: column;
+        gap: var(--step-2);
+        width: 100%;
+}
+
+.input {
+    padding-inline-start: 8px;
+    padding-inline-end: 5px;
+    padding-block: 10px;
+
+    border: none ;
+    outline: none;
+
+    background-color: transparent;
+    border-bottom: 2px solid #cccccc5b;
+
+    font-size: var(--step-0);
+    color: aqua;
+}
+
+.input::placeholder{
+    color: #cccccc5b;
+}
+
+.input:focus-within{
+    border-bottom: 2px solid #12dac9;
+    transition: all 4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.label {
+    padding-inline-start: 5px;
+    font-size:var(--step--2);
+    font-weight: bold;
+}
+
+.button {
+    width: max-content;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    border: none;
+    outline: none;
+    background-color: #4d76ce;
+    cursor: pointer;
+}
+.button:hover {
+    box-shadow: inset 0 0 20px #00000036;
+}
+.button:active {
+    box-shadow:   inset 0 0 20px #000000b9;
+   
+}
+
+.social {
+display: flex;
+align-items: center;
+gap: .9rem;
+}
+
+.caption {
+    font-size:var(--step--2);
+    font-weight: bold;
+}

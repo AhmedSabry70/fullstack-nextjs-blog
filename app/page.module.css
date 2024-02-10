@@ -1,0 +1,26 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  
+}
+
+ .content > :first-child{
+ flex: 9999 1 60ch;
+}
+.content > :last-child{
+  flex: 1 1 30ch;
+} 
+
+/* @media screen and (width <= 1024px) {
+  .content {
+    display: grid;
+    grid-template-columns:  1fr;
+  
+
+    
+
+  }
+  
+} */
