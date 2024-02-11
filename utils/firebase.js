@@ -1,6 +1,5 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-const{STORAGE_BUCKET : nnn}= process.env
 
 const firebaseConfig = {
   /* apiKey: process.env.FIREBASE,

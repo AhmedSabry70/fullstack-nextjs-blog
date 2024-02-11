@@ -4,9 +4,9 @@ import Image from 'next/image'
 import styles from './imageUploader.module.css'
 import { useEffect, useRef, useState } from 'react'
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { app } from '@/utils/firebase';
+import { app as firebaseApp} from '@/utils/firebase';
 
-const storage = getStorage(app);
+const storage = getStorage(firebaseApp);
 
 
 // Create the file metadata
