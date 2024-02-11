@@ -15,7 +15,6 @@ const AuthLinks = () => {
     // temporary
     const {status,data} = useSession()
 useEffect(()=>{
-    console.log({status});
 },[status])
     return (
         <>

@@ -78,9 +78,9 @@ const RegisterPage = () => {
                             //placeholder="blur"
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            className={styles.image} 
+                            className={styles.image}
                             priority={true}
-                            />
+                        />
                     </div>
                     <Link href={'/'} className={styles.singupAction}>
                         Create an account
@@ -106,11 +106,14 @@ const RegisterPage = () => {
 
                     <div className={styles.social}>
                         <span className={styles.caption}>Or login with </span>
-                        <div><Image blurDataURL="URL" placeholder="blur" src='/assets/images/social-media/icons8-facebook.svg' alt='facebook' width={24} height={24} /></div>
+                        {/* <div><Image blurDataURL="URL" placeholder="blur" src='/assets/images/social-media/icons8-facebook.svg' alt='facebook' width={24} height={24} /></div>
                         <div><Image blurDataURL="URL" placeholder="blur" src='/assets/images/social-media/icons8-instagram.svg' alt='instagram' width={24} height={24} /></div>
                         <div><Image blurDataURL="URL" placeholder="blur" src='/assets/images/social-media/icons8-linkedin.svg' alt='linkedin' width={24} height={24} /></div>
-                        <div><Image blurDataURL="URL" placeholder="blur" src='/assets/images/social-media/icons8-twitter.svg' alt='twitter' width={24} height={24} /></div>
-                        <div onClick={() => signIn('google')}><Image blurDataURL="URL" placeholder="blur" src='/assets/images/social-media/icons8-youtube.svg' alt='youtube' width={24} height={24} /></div>
+                        <div><Image blurDataURL="URL" placeholder="blur" src='/assets/images/social-media/icons8-twitter.svg' alt='twitter' width={24} height={24} /></div> */}
+                        <div onClick={() => signIn('facebook')}><Image src='/assets/images/social-media/icons8-facebook.svg' alt='facebook' width={24} height={24} /></div>
+                        <div onClick={() => signIn('github')}><Image src='/assets/images/social-media/icons8-linkedin.svg' alt='linkedin' width={24} height={24} /></div>
+                        <div onClick={() => signIn('google')}><Image src='/assets/images/social-media/icons8-youtube.svg' alt='youtube' width={24} height={24} /></div>
+                        {/*   <div onClick={() => signIn('google')}><Image blurDataURL="URL" placeholder="blur" src='/assets/images/social-media/icons8-youtube.svg' alt='youtube' width={24} height={24} /></div> */}
                     </div>
                 </div>
             </div>
